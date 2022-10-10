@@ -14,7 +14,7 @@ const Header = () => {
 
             <div className='flex justify-between px-5 py-4 w-full'>
 
-                <Link to='/' className='flex gap-2 items-center hover:text-red-600'>
+                <Link to='/' className='flex gap-2 items-center hover:text-blue-600'>
                     <img src={logo} alt="" className='h-9' />
                     <h1 className='font-bold text-3xl cus-style'>Code-War-Test</h1>
                 </Link>
@@ -30,11 +30,11 @@ const Header = () => {
 
                 {/* <div className='bg-white w-full h-1 md:hidden'></div> */}
 
-                <NavLink className='font-bold text-2xl block hover:text-orange-500' to='/topics'>Topics</NavLink>
+                <NavLink className='font-bold text-2xl block hover:text-purple-500' to='/topics'>Topics</NavLink>
 
-                <NavLink className='font-bold text-2xl block hover:text-orange-500 py-3 lg:py-0' to='/statistics'>Statistics</NavLink>
+                <NavLink className='font-bold text-2xl block hover:text-purple-500 py-3 lg:py-0' to='/statistics'>Statistics</NavLink>
 
-                <NavLink className='font-bold text-2xl block hover:text-orange-500' to='blog'>Blog</NavLink>
+                <NavLink className='font-bold text-2xl block hover:text-purple-500' to='blog'>Blog</NavLink>
 
             </ul>
         </div>

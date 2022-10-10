@@ -23,14 +23,14 @@ const SingleTopic = ({ topic }) => {
                     <ul className="flex gap-1">
                         <Link to={`/quiz/${id}`}>
                             <button
-                                className="inline-block rounded-full bg-blue-600 px-3 py-1 text-xs font-semibold text-white"
+                                className="inline-block rounded-full bg-blue-600 px-4 py-2 text-xs font-semibold text-white text-lg hover:bg-purple-600"
                             >
                                 Start Quiz
                             </button>
                         </Link>
                     </ul>
 
-                    <h5 className="mt-4 font-bold">{name}</h5>
+                    <h5 className="mt-4 font-bold text-2xl">{name}</h5>
 
                     <p className="mt-2 text-sm text-gray-500">
                         Total Ques.: {total}
