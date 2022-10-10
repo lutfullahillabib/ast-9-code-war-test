@@ -9,14 +9,15 @@ const Details = () => {
     const { name, questions } = quizes;
 
     return (
-        <div>
-            <h2>Quiz Topic: {name}</h2>
-            {
-                questions.map((ques, idx) => <Ques
-                    key={idx}
-                    ques={ques}
-                ></Ques>)
-            }
+        <div className='flex flex-col justify-center items-center' >
+            <div>
+                <h1 className='text-6xl font-bold text-gray-600' >Topic of {name}</h1>
+            </div>
+            <div className='mt-10 text-2xl' >
+                {
+                    questions.map(ques => <Ques ques={ques} key={ques.id} ></Ques>)
+                }
+            </div>
         </div>
     );
 };
