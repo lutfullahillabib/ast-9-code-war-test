@@ -10,6 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Swal from 'sweetalert2';
 
+import { EyeIcon } from '@heroicons/react/24/solid';
+
 
 const Ques = ({ ques, idx }) => {
     // console.log(ques);
@@ -53,28 +55,34 @@ const Ques = ({ ques, idx }) => {
 
     idx++;
 
+    // console.log(question);
+
+    const qn = ((question.slice(3, (question.length - 4))).replace("&nbsp;", ' ')).replace("&nbsp;", '');
+
     return (
         <div className='md:p-10 md:m-20 p-5 m-5 bg-black rounded-lg break-words'>
             <div className='flex justify-center items-center p-3' >
                 <h1 className='text-lg md:text-2xl text-gray-300 font-semibold md:text-justify text-left p-2' >
                     ({idx}). Question:
                     {" "}
-                    <span className='text-white'>{question}</span>
+                    <span className='text-white'>{qn}</span>
                 </h1>
 
-                <span className='p-5 text-2xl cursor-pointer hover:text-blue-500'>
-
-                    <button onClick={notify}>
-
-                        <FontAwesomeIcon icon={faEye} >
-                        </FontAwesomeIcon>
-
-                        <ToastContainer />
+                {/* <span className='p-5 text-2xl cursor-pointer hover:text-blue-500'> */}
 
 
-                    </button>
+                <button onClick={notify} className='p-5 text-2xl cursor-pointer hover:text-blue-500'>
 
-                </span>
+                    <FontAwesomeIcon icon={faEye} >
+                    </FontAwesomeIcon>
+
+                    {/* <EyeIcon className="h-6 w-6 text-blue-500" /> */}
+
+                </button>
+
+                <ToastContainer />
+
+                {/* </span> */}
 
             </div>
             <div className='md:p-6 grid grid-cols-1 md:grid-cols-2 gap-5' >
