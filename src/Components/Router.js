@@ -12,6 +12,7 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        loader: quizTopics,
         errorElement: <NF />,
         children: [
             {
@@ -31,6 +32,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/statistics',
+                loader: quizTopics,
                 element: <Statistics></Statistics>
             },
             {
@@ -40,5 +42,4 @@ export const router = createBrowserRouter([
         ]
     },
 
-    { path: '*', element: <NF></NF> },
 ])

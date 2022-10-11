@@ -67,7 +67,6 @@ const Ques = ({ ques, idx }) => {
                     <button onClick={notify}>
 
                         <FontAwesomeIcon icon={faEye} >
-
                         </FontAwesomeIcon>
 
                         <ToastContainer />

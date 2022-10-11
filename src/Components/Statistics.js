@@ -1,29 +1,44 @@
-import React from 'react';
-import { CartesianGrid, Line, LineChart, XAxis, YAxis, Tooltip } from 'recharts';
+import React, { useContext } from 'react';
+import { QuizContext } from './Main';
+
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
 const Statistics = () => {
+    const data = useContext(QuizContext);
 
-    const data = [
-        { name: 'React', uv: 8, },
-        { name: 'JavaScript', uv: 8 },
-        { name: 'CSS', uv: 9 },
-        { name: 'Git', uv: 8 }
-    ];
+    // console.log(data);
+
+    // const e = data.map(k => k.total);
+    // console.log(e);
+
     return (
-        <div className='my-32'>
+        <div className='py-32 bg-blue-300'>
+
             <div>
-                <h2 className=' text-2xl md:text-3xl mb-5 font-semibold underline'>Check the quizs graph here</h2>
+                <h2 className=' text-2xl md:text-3xl mb-5 font-semibold'>Quiz-Chart (name vs total ques.)</h2>
             </div>
-            <div className=' flex justify-center items-center mt-32'>
-                <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-                    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+
+            <ResponsiveContainer width="50%" height="50%" aspect={1} className='mx-auto pt-10'>
+                <AreaChart
+                    width={50}
+                    height={50}
+                    data={data}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                </LineChart>
-            </div>
+                    <Legend />
+                    <Area type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
+                </AreaChart>
+            </ResponsiveContainer>
 
         </div>
     );
