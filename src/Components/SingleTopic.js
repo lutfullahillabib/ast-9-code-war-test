@@ -9,13 +9,13 @@ const SingleTopic = ({ topic }) => {
     return (
         <div>
             <div
-                className="group grid grid-cols-1 overflow-hidden rounded-lg border border-gray-100 sm:grid-cols-3 bg-black text-white"
+                className="group grid grid-cols-1 overflow-hidden rounded-lg border border-gray-100 md:grid-cols-3 bg-black text-white"
             >
                 <div className="relative">
                     <img
                         alt="Climber"
                         src={logo}
-                        className="absolute inset-0 h-full w-full object-cover bg-zinc-700"
+                        className=" h-full w-full object-cover bg-zinc-700"
                     />
                 </div>
 

@@ -11,7 +11,7 @@ const Details = () => {
     return (
         <div className='py-5 bg-stone-500 text-white' >
             <div>
-                <h1 className='text-5xl font-bold text-black' >Quiz Topic: <span className='text-gray-200'>{name}</span></h1>
+                <h1 className='text-5xl font-bold text-black p-3' >Quiz Topic: <span className='text-gray-200'>{name}</span></h1>
             </div>
             <div>
                 {

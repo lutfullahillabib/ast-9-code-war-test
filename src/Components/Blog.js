@@ -4,6 +4,24 @@ const Blog = () => {
 
     return (
         <div>
+
+
+            <div className="flex justify-center items-center gap-3 py-8 bg-stone-500">
+
+                <div className="h-1 bg-white w-full"></div>
+
+                <h1 className="text-white text-4xl">Blog</h1>
+
+                <div className="h-1 bg-white w-full"></div>
+
+            </div>
+            {/* ... */}
+
+            <h1 className="text-center text-white text-4xl bg-stone-500">Some React Interview Questions.</h1>
+
+
+
+            {/*  */}
             <div className='flex justify-center items-center py-16 bg-stone-500'>
                 <div className="w-3/4 space-y-4">
                     {/* Q-1 */}

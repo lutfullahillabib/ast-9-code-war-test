@@ -24,7 +24,7 @@ const NF = () => {
 
                             {error && (
                                 <div>
-                                    <p className='text-red-500 text-2xl font-semibold md:text-3xl'>{error.statusText || error.message}</p>
+                                    <p className='text-red-600 text-2xl font-semibold md:text-3xl'>{error.statusText || error.message}</p>
 
                                     <p className="text-white mt-4 mb-8">{error.status}</p>
                                 </div>

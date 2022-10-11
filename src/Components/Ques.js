@@ -54,9 +54,9 @@ const Ques = ({ ques, idx }) => {
     idx++;
 
     return (
-        <div className='p-10 m-20 bg-black rounded-lg'>
-            <div className='flex justify-center items-center' >
-                <h1 className='text-2xl text-gray-300 font-semibold text-justify' >
+        <div className='md:p-10 md:m-20 p-5 m-5 bg-black rounded-lg break-words'>
+            <div className='flex justify-center items-center p-3' >
+                <h1 className='text-lg md:text-2xl text-gray-300 font-semibold md:text-justify text-left p-2' >
                     ({idx}). Question:
                     {" "}
                     <span className='text-white'>{question}</span>
@@ -66,8 +66,9 @@ const Ques = ({ ques, idx }) => {
 
                     <button onClick={notify}>
 
-                        <FontAwesomeIcon icon={faEye} ></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faEye} >
 
+                        </FontAwesomeIcon>
 
                         <ToastContainer />
 
@@ -77,7 +78,7 @@ const Ques = ({ ques, idx }) => {
                 </span>
 
             </div>
-            <div className='p-6 grid grid-cols-2 gap-5' >
+            <div className='md:p-6 grid grid-cols-1 md:grid-cols-2 gap-5' >
 
                 {
                     // options.map(opt => console.log(opt))
