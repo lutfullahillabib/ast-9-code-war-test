@@ -1,60 +1,104 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye } from '@fortawesome/free-solid-svg-icons'
-import { ToastContainer, toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+
+import { ToastContainer, toast, Zoom } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
-import Swal from 'sweetalert2'
+
+import Swal from 'sweetalert2';
 
 
-const Ques = ({ ques }) => {
-    console.log(ques);
-    const { correctAnswer, options, question } = ques;
+const Ques = ({ ques, idx }) => {
+    // console.log(ques);
+    const { correctAnswer, options, question, id } = ques;
 
-    const handleQuizs = (e) => {
+    const handleQuizAns = (e) => {
         if (e === correctAnswer) {
             Swal.fire(
-                'Good job!',
-                'You clicked the right answer!',
+                'Congratulation..!!',
+                `Your Ans. <b>"${e}"</b> is correct..!!`,
                 'success'
             )
-        } else {
+        }
+
+        else {
             Swal.fire({
                 icon: 'error',
-                title: 'Oops...',
-                text: 'Your Ans is Wrong!',
-                footer: '<a href="">pls try again</a>'
+                title: `Your Ans. <b>"${e}"</b> is Wrong..!!`,
+                text: 'Oops...!!!',
+                footer: `Please, try Again..!!`
             })
         }
 
     };
 
-    const notify = () => toast(`Correct Ans is: ${correctAnswer}`);
+    // const notify = () => toast(`Ques-${idx}. Correct Ans is: ${correctAnswer}`);
+
+    const notify = () => {
+        toast.info(`Ques-${idx}. Correct Ans is: ${correctAnswer}`, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'dark',
+            transition: Zoom,
+        });
+    }
+
+    idx++;
 
     return (
-        <div className='shadow-lg p-5 m-20 bg-gray-300 rounded-lg'>
+        <div className='p-10 m-20 bg-black rounded-lg'>
             <div className='flex justify-center items-center' >
-                <h1 className='text-3xl text-gray-600' ><span className='font-bold' >Question:</span> {question} </h1>
-                <span className='ml-5'>
-                    <button onClick={notify} ><FontAwesomeIcon icon={faEye} ></FontAwesomeIcon></button>
-                    <ToastContainer />
+                <h1 className='text-2xl text-gray-300 font-semibold text-justify' >
+                    ({idx}). Question:
+                    {" "}
+                    <span className='text-white'>{question}</span>
+                </h1>
+
+                <span className='p-5 text-2xl cursor-pointer hover:text-blue-500'>
+
+                    <button onClick={notify}>
+
+                        <FontAwesomeIcon icon={faEye} ></FontAwesomeIcon>
+
+
+                        <ToastContainer />
+
+
+                    </button>
+
                 </span>
 
             </div>
-            <div className='p-10 grid grid-cols-2 gap-5 ' >
+            <div className='p-6 grid grid-cols-2 gap-5' >
+
+                {
+                    // options.map(opt => console.log(opt))
+                }
+
                 {
                     options.map((opt, index) =>
-                        <label className=' border-2 p-5'>
-                            <input type="radio"
-                                name='quiz'
-                                value={opt.value}
-                                key={index}
-                                className='mx-2'
-                                defaultChecked={opt.value === correctAnswer}
-                                onChange={() => handleQuizs(opt)}
-                            />
+
+                        <button
+                            key={index}
+
+                            className='border-4 rounded-2xl p-5 cursor-pointer hover:bg-blue-600 hover:text-black font-semibold text-lg mx-3'
+
+                            // onChange={() => handleQuizAns(opt)}
+
+                            onClick={() => handleQuizAns(opt)}
+                        >
+
                             {opt}
-                        </label>
+
+                        </button>
                     )
                 }
             </div>

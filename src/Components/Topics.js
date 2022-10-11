@@ -8,7 +8,7 @@ const Topics = () => {
     // console.log(topics);
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 m-5 '>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 bg-stone-500'>
             {
                 topics.map(topic => <SingleTopic
                     key={topic.id}

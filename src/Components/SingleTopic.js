@@ -15,7 +15,7 @@ const SingleTopic = ({ topic }) => {
                     <img
                         alt="Climber"
                         src={logo}
-                        className="absolute inset-0 h-full w-full object-cover bg-zinc-500"
+                        className="absolute inset-0 h-full w-full object-cover bg-zinc-700"
                     />
                 </div>
 
@@ -23,16 +23,16 @@ const SingleTopic = ({ topic }) => {
                     <ul className="flex gap-1">
                         <Link to={`/quiz/${id}`}>
                             <button
-                                className="inline-block rounded-full bg-blue-600 px-4 py-2 text-xs font-semibold text-white text-lg hover:bg-purple-600"
+                                className="inline-block rounded-full bg-blue-600 px-4 py-2 font-semibold text-white text-lg hover:bg-purple-600"
                             >
                                 Start Quiz
                             </button>
                         </Link>
                     </ul>
 
-                    <h5 className="mt-4 font-bold text-2xl">{name}</h5>
+                    <h5 className="mt-4 font-bold text-3xl">{name}</h5>
 
-                    <p className="mt-2 text-sm text-gray-500">
+                    <p className="mt-2 text-sm text-gray-400">
                         Total Ques.: {total}
                     </p>
                 </div>

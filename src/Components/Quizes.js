@@ -6,16 +6,20 @@ const Details = () => {
     const quizes = useLoaderData().data;
     // console.log(quizes);
 
-    const { name, questions } = quizes;
+    const { id, logo, total, name, questions } = quizes;
 
     return (
-        <div className='flex flex-col justify-center items-center' >
+        <div className='py-5 bg-stone-500 text-white' >
             <div>
-                <h1 className='text-6xl font-bold text-gray-600' >Topic of {name}</h1>
+                <h1 className='text-5xl font-bold text-black' >Quiz Topic: <span className='text-gray-200'>{name}</span></h1>
             </div>
-            <div className='mt-10 text-2xl' >
+            <div>
                 {
-                    questions.map(ques => <Ques ques={ques} key={ques.id} ></Ques>)
+                    questions.map((ques, idx) => <Ques
+                        key={ques.id}
+                        ques={ques}
+                        idx={idx}
+                    ></Ques>)
                 }
             </div>
         </div>
