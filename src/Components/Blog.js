@@ -14,7 +14,7 @@ const Blog = () => {
                             </h5>
 
                             <span
-                                className="ml-1.5 flex-shrink-0 rounded-full bg-gray-200  hover:bg-blue-500 p-1.5 text-gray-900 sm:p-3"
+                                className="ml-1.5 flex-shrink-0 rounded-full bg-gray-200  hover:bg-blue-500 p-1.5 text-gray-900 sm:p-3 "
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

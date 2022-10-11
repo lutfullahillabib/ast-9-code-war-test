@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <ul className={`lg:flex items-center justify-end gap-7 absolute mr-5 py-4 lg:static w-full bg-zinc-900 lg:bg-black  duration-700 ease-in ${open ? 'top-[68px]' : 'top-[-200px]'}`}>
+            <ul className={`lg:flex items-center justify-end gap-7 absolute mr-5 py-4 lg:static w-full bg-zinc-900 lg:bg-black duration-700 ease-in ${open ? 'top-[68px]' : 'top-[-200px]'}`}>
 
                 <NavLink className='font-bold text-2xl block hover:text-purple-500 px-3' to='/topics'>Topics</NavLink>
 
