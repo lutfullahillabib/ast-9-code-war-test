@@ -1,3 +1,43 @@
+# `#Assignment - 9` = ([CODE-WAR-TEST](https://ast-9-code-war-test.netlify.app/)) by `Md. Lutfullahil Labib of P.Hero.`
+
+## `Live Link (Netlify)` = 
+
+## [https://ast-9-code-war-test.netlify.app/](https://ast-9-code-war-test.netlify.app/)
+
+## `Code Link (GitHub)` = 
+
+## [https://github.com/programming-hero-web-course2/b6-quiz-crackerz-lutfullahillabib](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-lutfullahillabib)
+
+---
+## This project is Responsive for all kind of devices (`PC, TABLET, MOBILE`).
+---
+# I have used following technology for this project:
+
+- ## `"name": "ast-9-code-war-test"`,
+- ## `"version": "0.1.0",`
+- ## `"@fortawesome/fontawesome-svg-core": "^6.2.0",`
+- ## `"@fortawesome/free-solid-svg-icons": "^6.2.0",`
+- ## `"@fortawesome/react-fontawesome": "^0.2.0",`
+- ## `"@heroicons/react": "^2.0.12",`
+- ## `"@testing-library/jest-dom": "^5.16.5",`
+- ## `"@testing-library/react": "^13.4.0",`
+- ## `"@testing-library/user-event": "^13.5.0",`
+- ## `"aos": "^2.3.4",` Component Animation
+- ## `"lottie-react": "^2.3.1",` Animation Gif/Picture
+- ## `"react": "^18.2.0",`
+- ## `"react-dom": "^18.2.0",`
+- ## `"react-router-dom": "^6.4.2",`
+- ## `"react-scripts": "5.0.1",`
+- ## `"react-toastify": "^9.0.8",`
+- ## `"recharts": "^2.1.14",`
+- ## `"sweetalert2": "^11.5.0",`
+- ## `"web-vitals": "^2.1.4",`
+- ## `"tailwindcss": "^3.1.8"`
+- ## [KitWind](https://kitwind.io/) for Components
+- ## [HyperUI](https://www.hyperui.dev/) for Components
+- ## [MambaUI](https://www.mambaui.com/) for Components
+---
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

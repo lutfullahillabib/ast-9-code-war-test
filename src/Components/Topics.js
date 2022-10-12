@@ -10,10 +10,10 @@ const Topics = () => {
 
     return (
         <div>
-            <div className='py-24 bg-stone-500'>
+            <div className='py-5 bg-blue-400'>
                 <Banner></Banner>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 bg-stone-500'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 bg-blue-400'>
                 {
                     topics.map(topic => <SingleTopic
                         key={topic.id}

@@ -6,27 +6,27 @@ const Blog = () => {
         <div>
 
 
-            <div className="flex justify-center items-center gap-3 py-8 bg-stone-500">
+            <div className="flex justify-center items-center gap-3 py-8 bg-blue-400">
 
-                <div className="h-1 bg-white w-full"></div>
+                <div className="h-1 bg-black w-full"></div>
 
-                <h1 className="text-white text-4xl">Blog</h1>
+                <h1 className="text-black text-4xl">Blog</h1>
 
-                <div className="h-1 bg-white w-full"></div>
+                <div className="h-1 bg-black w-full"></div>
 
             </div>
             {/* ... */}
 
-            <h1 className="text-center text-white text-4xl bg-stone-500">Some React Interview Questions.</h1>
+            <h1 className="text-center text-blue-700 font-semibold text-4xl bg-blue-400">Some React Interview Questions.</h1>
 
 
 
             {/*  */}
-            <div className='flex justify-center items-center py-16 bg-stone-500'>
-                <div className="w-3/4 space-y-4">
+            <div className='flex justify-center items-center py-16 bg-blue-400' >
+                <div className="w-3/4 space-y-4" data-aos="zoom-in" data-aos-duration="1500">
                     {/* Q-1 */}
-                    <details className="group border-l-4 border-blue-500 bg-black p-6 text-white" >
-                        <summary className="flex cursor-pointer items-center justify-between text-gray-300  hover:text-blue-500">
+                    <details className="group border-l-4 border-blue-700 bg-black p-6 text-white" open >
+                        <summary className="flex cursor-pointer items-center justify-between text-gray-300  hover:text-blue-500" >
                             <h5 className="text-lg font-medium">
                                 What is the Purpose of React-Router?
                             </h5>
@@ -48,12 +48,12 @@ const Blog = () => {
                                 </svg>
                             </span>
                         </summary>
-                        <p className="mt-4 leading-relaxed text-justify">
+                        <p className="mt-4 leading-relaxed text-justify" >
                             React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
                         </p>
                     </details>
                     {/* Q-2 */}
-                    <details className="group border-l-4 border-blue-500 bg-black p-6 text-white" >
+                    <details className="group border-l-4 border-blue-700 bg-black p-6 text-white" >
                         <summary className="flex cursor-pointer items-center justify-between text-gray-300  hover:text-blue-500">
                             <h5 className="text-lg font-medium">
                                 How does Context API work?
@@ -85,7 +85,7 @@ const Blog = () => {
                         </p>
                     </details>
                     {/* Q-3 */}
-                    <details className="group border-l-4 border-blue-500 bg-black p-6 text-white" >
+                    <details className="group border-l-4 border-blue-700 bg-black p-6 text-white" >
                         <summary className="flex cursor-pointer items-center justify-between text-gray-300  hover:text-blue-500">
                             <h5 className="text-lg font-medium">
                                 What is useRef?

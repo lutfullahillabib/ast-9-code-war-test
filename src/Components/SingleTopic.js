@@ -7,7 +7,7 @@ const SingleTopic = ({ topic }) => {
     const { name, logo, total, id } = topic;
 
     return (
-        <div>
+        <div data-aos="zoom-in-down" data-aos-duration="700" data-aos-easing="ease-in-cubic">
             <div
                 className="group grid grid-cols-1 overflow-hidden rounded-lg border border-gray-100 md:grid-cols-3 bg-black text-white"
             >

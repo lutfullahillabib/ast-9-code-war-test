@@ -42,7 +42,7 @@ const Ques = ({ ques, idx }) => {
     const notify = () => {
         toast.info(`Ques-${idx}. Correct Ans is: ${correctAnswer}`, {
             position: "top-center",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -60,7 +60,7 @@ const Ques = ({ ques, idx }) => {
     const qn = ((question.slice(3, (question.length - 4))).replace("&nbsp;", ' ')).replace("&nbsp;", '');
 
     return (
-        <div className='md:p-10 md:m-20 p-5 m-5 bg-black rounded-lg break-words'>
+        <div className='md:p-10 md:m-20 p-5 m-5 bg-black rounded-lg break-words' data-aos="zoom-in" data-aos-duration="700">
             <div className='flex justify-center items-center p-3' >
                 <h1 className='text-lg md:text-2xl text-gray-300 font-semibold md:text-justify text-left p-2' >
                     ({idx}). Question:
@@ -85,7 +85,7 @@ const Ques = ({ ques, idx }) => {
                 {/* </span> */}
 
             </div>
-            <div className='md:p-6 grid grid-cols-1 md:grid-cols-2 gap-5' >
+            <div className='md:p-6 grid grid-cols-1 md:grid-cols-2 gap-5' data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="700">
 
                 {
                     // options.map(opt => console.log(opt))

@@ -19,14 +19,14 @@ const NF = () => {
                                 <span className="sr-only">Error</span>404
                             </h2>
 
-                            <p className=" text-2xl font-semibold md:text-3xl">Sorry, This page doesn't exist..!!</p>
-                            <p className="mt-4 mb-8  text-gray-200">Please, Click the Button below to go the Homepage.</p>
+                            <p className=" text-2xl font-semibold md:text-3xl">Sorry, Error..!!</p>
+                            <p className="mt-4 mb-8  text-gray-200">Please, Click the Button below to go to the Homepage.</p>
 
                             {error && (
                                 <div>
                                     <p className='text-red-600 text-2xl font-semibold md:text-3xl'>{error.statusText || error.message}</p>
 
-                                    <p className="text-white mt-4 mb-8">{error.status}</p>
+                                    <p className="text-white text-2xl mt-4 mb-8">{error.status}</p>
                                 </div>
                             )}
 
